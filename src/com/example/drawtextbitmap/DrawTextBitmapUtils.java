@@ -12,7 +12,7 @@ import android.text.TextPaint;
 
 public class DrawTextBitmapUtils {
 
-    public static void drawVoiceBitmap(Bitmap bg, String msg) {
+    public static void drawTextBitmap(Bitmap bg, String msg) {
         Canvas canvas = new Canvas(bg);
 
         TextPaint mStrokePaint = new TextPaint();

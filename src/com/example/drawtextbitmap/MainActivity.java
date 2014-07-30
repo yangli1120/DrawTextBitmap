@@ -34,7 +34,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
                 if(!TextUtils.isEmpty(mInputEt.getEditableText().toString())) {
                     Bitmap bm = BitmapFactory.decodeResource(getResources(),
                             R.drawable.bitch).copy(Bitmap.Config.ARGB_8888, true);
-                    DrawTextBitmapUtils.drawVoiceBitmap(bm,
+                    DrawTextBitmapUtils.drawTextBitmap(bm,
                             mInputEt.getEditableText().toString());
                     mPreviewIv.setImageBitmap(bm);
                 }
