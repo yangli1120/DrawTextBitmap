@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" >
+
+    <ImageView
+        android:id="@+id/preview_iv"
+        android:layout_width="match_parent"
+        android:layout_height="460dp"
+        android:src="@drawable/bitch"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp" >
+        <EditText android:id="@+id/input_et"
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="5"/>
+        <TextView
+            android:id="@+id/draw_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="draw text"
+            android:textSize="18dp"
+            android:textColor="#0093ff"/>
+    </LinearLayout>
+
+</RelativeLayout>
